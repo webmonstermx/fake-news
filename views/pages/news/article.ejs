@@ -1,0 +1,16 @@
+<form>
+  <input type="hidden" name="_csrf" value="<%= _csrf %>" />
+</form>
+<div id = "article">
+<div id="app" class="container ">
+<form action="/articles/submit" method="post">
+  <input name="title" type="text" class="title" placeholder= "<%=newArticle.title%>"/>
+  <input name="article" type="text" class="paragraph" placeholder="<%=newArticle.article%>">
+  <input name="meta" type="text" class="metadata" placeholder="<%=newArticle.meta%>">
+  <input type="submit" class= "button" value ="create article!" />
+
+</div>
+
+</div>
+</div>
+
